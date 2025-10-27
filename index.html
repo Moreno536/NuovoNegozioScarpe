@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEP UP – The Future of Footwear | Scarpe Moderne Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <button class="cart-btn-fixed" onclick="openCartModal()">
+        <i class="fas fa-shopping-bag"></i> <span id="cart-counter" class="cart-badge">0</span>
+    </button>
+
+    <header id="home">
+        <div class="hero">
+            <div class="hero-text">
+                <h1>STEP UP: Riscrivi le Regole, Passo Dopo Passo.</h1>
+                <p>Siamo nati da un collettivo di *sneakerheads* e designer indipendenti per curare la selezione più *fresh* e all'avanguardia. Ogni modello è un *statement* pronto a definire il tuo prossimo *mood*.</p>
+                <a href="#collezione" class="btn primary">➡️ ESPLORA LA COLLEZIONE</a>
+            </div>
+        </div>
+    </header>
+    
+    <section id="collezione">
+        <h2>🔥 La Nostra Selezione Esclusiva</h2>
+        <div class="collection">
+            <div class="shoe-card" data-name="PULSAR-X" data-price="149.99">
+                <img src="https://via.placeholder.com/300x250/222222/FFFFFF?text=PULSAR-X" alt="PULSAR-X - Aether Labs">
+                <h3>PULSAR-X</h3>
+                <p class="brand">Aether Labs</p>
+                <p class="description">La sneaker *chunky* per chi vive tra *clubbing* e gallerie d'arte. Tecnologia Air-Flow estrema.</p>
+                <div class="price">149,99 €</div>
+                <button class="btn accent" onclick="addToCart('PULSAR-X', 149.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+
+            <div class="shoe-card" data-name="RETRO '95" data-price="99.99">
+                <img src="https://via.placeholder.com/300x250/555555/FFFFFF?text=RETRO+95" alt="RETRO '95 - Vintage Reborn">
+                <h3>RETRO '95</h3>
+                <p class="brand">Vintage Reborn</p>
+                <p class="description">Il classico da running degli anni '90 rivisitato con materiali 100% riciclati.</p>
+                <div class="price">99,99 €</div>
+                <button class="btn accent" onclick="addToCart('RETRO 95', 99.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="GHOST-RUN" data-price="129.99">
+                <img src="https://via.placeholder.com/300x250/aaaaaa/333333?text=GHOST-RUN" alt="GHOST-RUN - SpeedCore">
+                <h3>GHOST-RUN</h3>
+                <p class="brand">SpeedCore</p>
+                <p class="description">Leggerezza estrema e suola reattiva. Per chi non ha tempo da perdere.</p>
+                <div class="price">129,99 €</div>
+                <button class="btn accent" onclick="addToCart('GHOST-RUN', 129.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="CITY-HI" data-price="119.99">
+                <img src="https://via.placeholder.com/300x250/444444/FFFFFF?text=CITY-HI" alt="CITY-HI - Urban Canvas">
+                <h3>CITY-HI</h3>
+                <p class="brand">Urban Canvas</p>
+                <p class="description">Stivaletto high-top minimal in pelle vegana. L'eleganza *street*.</p>
+                <div class="price">119,99 €</div>
+                <button class="btn accent" onclick="addToCart('CITY-HI', 119.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="SOLAR SLIDE" data-price="49.99">
+                <img src="https://via.placeholder.com/300x250/ff9800/FFFFFF?text=SOLAR+SLIDE" alt="SOLAR SLIDE - Beach Kulture">
+                <h3>SOLAR SLIDE</h3>
+                <p class="brand">Beach Kulture</p>
+                <p class="description">Ciabatta *oversize* e ultra-comfort. Non è solo estate, è uno *state of mind*.</p>
+                <div class="price">49,99 €</div>
+                <button class="btn accent" onclick="addToCart('SOLAR SLIDE', 49.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="ZX-DRIVE" data-price="169.99">
+                <img src="https://via.placeholder.com/300x250/00bcd4/FFFFFF?text=ZX-DRIVE" alt="ZX-DRIVE - Future Wear">
+                <h3>ZX-DRIVE</h3>
+                <p class="brand">Future Wear</p>
+                <p class="description">Design aggressivo e lacci magnetici. Il futuro è ai tuoi piedi.</p>
+                <div class="price">169,99 €</div>
+                <button class="btn accent" onclick="addToCart('ZX-DRIVE', 169.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="COMET LOW" data-price="89.99">
+                <img src="https://via.placeholder.com/300x250/f0f0f0/333333?text=COMET+LOW" alt="COMET LOW - Aether Labs">
+                <h3>COMET LOW</h3>
+                <p class="brand">Aether Labs</p>
+                <p class="description">Il passepartout minimalista: bianca, pulita, immortale.</p>
+                <div class="price">89,99 €</div>
+                <button class="btn accent" onclick="addToCart('COMET LOW', 89.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="TRAIL-BLAZE" data-price="139.99">
+                <img src="https://via.placeholder.com/300x250/388e3c/FFFFFF?text=TRAIL-BLAZE" alt="TRAIL-BLAZE - Wild Path">
+                <h3>TRAIL-BLAZE</h3>
+                <p class="brand">Wild Path</p>
+                <p class="description">Scarpa da trekking leggera, ma con un design che urla *streetstyle*.</p>
+                <div class="price">139,99 €</div>
+                <button class="btn accent" onclick="addToCart('TRAIL-BLAZE', 139.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="VARSITY 88" data-price="79.99">
+                <img src="https://via.placeholder.com/300x250/d32f2f/FFFFFF?text=VARSITY+88" alt="VARSITY 88 - Old School Inc.">
+                <h3>VARSITY 88</h3>
+                <p class="brand">Old School Inc.</p>
+                <p class="description">Ispirata ai campi da basket. Tela robusta e vibrazioni *college*.</p>
+                <div class="price">79,99 €</div>
+                <button class="btn accent" onclick="addToCart('VARSITY 88', 79.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+            
+            <div class="shoe-card" data-name="ECLIPSE K" data-price="109.99">
+                <img src="https://via.placeholder.com/300x250/111111/FFFFFF?text=ECLIPSE+K" alt="ECLIPSE K - Zero Gravity">
+                <h3>ECLIPSE K</h3>
+                <p class="brand">Zero Gravity</p>
+                <p class="description">La scarpa più venduta, nera su nero, indistruttibile. **Best Seller.**</p>
+                <div class="price">109,99 €</div>
+                <button class="btn accent" onclick="addToCart('ECLIPSE K', 109.99)">AGGIUNGI AL CARRELLO</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeCartModal()">&times;</span>
+            <h2>🛒 Il Tuo Carrello</h2>
+            
+            <div id="cart-items-list" class="cart-items-list">
+                </div>
+            
+            <hr>
+            <div id="cart-summary" class="cart-summary">
+                <p>Subtotale: <span id="subtotal">0.00 €</span></p>
+                <p>Spedizione: <span id="shipping">7.00 €</span></p>
+                <h3>TOTALE FINALE: <span id="final-total">7.00 €</span></h3>
+            </div>
+            
+            <button class="btn primary full-width" onclick="startCheckout()">
+                PROCEDI ALL'ACQUISTO
+            </button>
+        </div>
+    </div>
+
+    <section id="checkout" class="checkout-container hidden">
+        <a href="#home" class="btn secondary back-to-shop" onclick="cancelCheckout()">← Torna alla Home</a>
+        <h2>💳 Checkout - Pagamento Sicuro</h2>
+
+        <div id="step-shipping" class="checkout-step">
+            <h4 class="step-title">FASE 1 di 2: Indirizzo di Spedizione</h4>
+            <form id="shipping-form">
+                <label for="nome">Nome e Cognome</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email (Conferma Ordine)</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="indirizzo">Via e Numero Civico</label>
+                <input type="text" id="indirizzo" name="indirizzo" required>
+                
+                <label for="citta">Città</label>
+                <input type="text" id="citta" name="citta" required>
+                
+                <label for="cap">CAP</label>
+                <input type="text" id="cap" name="cap" required>
+                
+                <label for="paese">Paese</label>
+                <input type="text" id="paese" name="paese" value="Italia" required>
+
+                <button type="button" class="btn primary full-width" onclick="goToPaymentStep()">
+                    CONTINUA CON IL PAGAMENTO
+                </button>
+            </form>
+        </div>
+
+        <div id="step-payment" class="checkout-step hidden">
+            <h4 class="step-title">FASE 2 di 2: Dati della Carta</h4>
+            <form id="payment-form">
+                <label for="card-number">Numero della Carta (VISA, MasterCard, ecc.)</label>
+                <input type="text" id="card-number" name="card-number" placeholder="XXXX XXXX XXXX XXXX" required>
+
+                <div class="card-details">
+                    <div>
+                        <label for="expiry-date">Data di Scadenza (MM/AA)</label>
+                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/AA" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="XXX" required>
+                    </div>
+                </div>
+
+                <label for="card-name">Nome del Titolare sulla Carta</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <button type="submit" class="btn primary full-width final-payment-btn">
+                    FINALIZZA ORDINE e PAGA [Totale Finale]
+                </button>
+                <p class="terms">Cliccando accetti i Termini e Condizioni e l'Informativa sulla Privacy.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer id="contatti">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Sei a un Passo. Non Esitare.</h4>
+                <p>La tua prossima icona di stile è qui.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contatti Utili</h4>
+                <p>Assistenza Clienti</p>
+                <p>📧 <a href="mailto:hello@stepup.com">hello@stepup.com</a></p>
+                <p>📞 <a href="tel:+390123456789">+39 012 3456789</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Servizi & Legali</h4>
+                <a href="#">FAQ</a>
+                <a href="#">Resi & Rimborsi</a>
+                <a href="#">Informativa sulla Privacy</a>
+            </div>
+            <div class="footer-section">
+                <h4>Vibe Sociale</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <button class="btn accent small">Iscriviti Newsletter</button>
+            </div>
+        </div>
+        <p class="copyright">© 2025 STEP UP. Tutti i diritti riservati. Sede Legale: Via della Moda, 1 - 20100 Milano, IT.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
